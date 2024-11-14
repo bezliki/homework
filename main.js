@@ -11,7 +11,7 @@ function combine() {
             }
         }
     }
-    return result;
+    return result
 }
 
 const objA = { a: 10, b: 20, c: 30 };
@@ -31,7 +31,7 @@ function Character(name, opness) {
 
     this.attack = function () {
         return this.opness + ~~(Math.random() * 20) + 1;
-    };
+    }
 }
 
 
@@ -51,8 +51,8 @@ function cake(ingredient, amount) {
         'butter': 170,
         'eggs': 3,
         'self-raising flour': 115,
-        'cocoa powder': 55
-    };
+        'cocoa powder': 55,
+    }
 
     const ratio = amount / recipe[ingredient];
     const newRecipe = {};
@@ -124,9 +124,9 @@ class Notification {
 }
 
 
-const emailService = new EmailService();
-const notification = new Notification(emailService);
-notification.notify("Важное сообщение\n");
+const emailService = new EmailService()
+const notification = new Notification(emailService)
+notification.notify("Важное сообщение\n")
 
 
 
